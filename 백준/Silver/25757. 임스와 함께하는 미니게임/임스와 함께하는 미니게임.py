@@ -1,12 +1,14 @@
+import sys
+
 Y = 2
 F = 3
 O = 4
 
-num, play = input().split()
+num, play = sys.stdin.readline().split()
 num = int(num)
 s = set()
 for i in range(num):
-    tmp = input()
+    tmp = sys.stdin.readline()
     s.add(tmp)
 
 if play == "Y":
